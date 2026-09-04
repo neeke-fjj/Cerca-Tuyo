@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Carrito-Vacio">
+        <div class="logo">
+            <img src="img/carrito-super.jpg" alt="carrito">
+        </div>
+        <div class="texto">
+            <h1>Tu carrito esta vacio</h1>
+            <h2>Explora y conoce nuestros comercios adheridos</h2>
+            <a href="catalogo.html" class="boton-buscar">Explorar comercios</a>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Carrito-Lleno">
+        <div class="encabezado">
+            <h1>3 productos de <em>2 comercios</em></h1>
+        </div>
+        <div class="columna-izquierda">
+            <article class="caja-comercio">
+                <h2 class="comercio">Parrillada Oran</h2>
+                <div class="producto">
+                    <div class="imagen-producto">
+                       <img src="img/" alt="comida">
+                    </div>
+                    <div class="detalle">
+                        <h4>Milanesa napolitana con papas</h4>
+                        <p>$ 5.400 · c/u</p>
+                    </div>
+                    <div class="cantidad">
+                        <button class="restar">-</button>
+                        <span class="numero">1</span>  
+                        <button class="sumar">+</button>
+                    </div>
+                    <div class="precio">
+                        <strong>$ 5.400</strong>
+                        <button class="borrar">Borrar</button>
+                    </div>
+                </div>
+            </article>
+            <article class="caja-comercio">
+                <h2 class="comercio">Farmacia Oran</h2>
+                <div class="producto">
+                    <div class="imagen-producto">
+                       <img src="img/" alt="pastilla">
+                    </div>
+                    <div class="detalle">
+                        <h4>Certal perla</h4>
+                        <p>$ 2.000 · c/u</p>
+                    </div>
+                    <div class="cantidad">
+                        <button class="restar">-</button>
+                        <span class="numero">2</span>  
+                        <button class="sumar">+</button>
+                    </div>
+                    <div class="precio">
+                        <strong>$4.000</strong>
+                        <button class="borrar">Borrar</button>
+                    </div>
+                </div>
+            </article>
+            <div class="acciones-globales-carrito">
+                <button class="boton-vaciar" id="btn-vaciar-todo">Vaciar carrito</button>
+            </div>
+        </div>
+        <aside class="columna-derecha">
+            <em class="resumen">Resumen</em>
+            <div class="fila">
+                <span>Subtotal</span>
+                <span>$9.400</span>
+            </div>
+            <div class="fila">
+               <span>Envio</span>
+               <span>Se calcula al confirmar</span>
+            </div>
+            <div class="total">
+                <strong>TOTAL</strong>
+                <strong>$9.400</strong>
+            </div>
+            <a href="confirmar-pago.html"><button class="pagar">Confirmar Pago</button></a>
+            <a href="catalogo.html">Seguir comprando</a>
+        </aside>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

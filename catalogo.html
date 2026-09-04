@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Cabecera-Catalogo">
+        <div class="texto">
+            <p>Catalogo</p>
+            <h1>Encontra lo que necesitas <em>Cerca Tuyo</em></h1>
+        </div>
+        <div class="barra-buscador">
+            <input type="text" id="buscador-principal" placeholder="Buscar algun producto, servicio...">
+        </div>
+    </section>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="botones-filtrado">
+        <div class="botones-filtro">
+            <button class="boton-filtrado activo" data-filtro="todos">TODOS</button>
+            <button class="boton-filtrado" data-filtro="productos">PRODUCTOS</button>
+            <button class="boton-filtrado" data-filtro="servicios">SERVICIOS</button>
+        </div>
+    </section>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="botones-especificos">
+        <div class="botones-categoria">
+            <button class="boton-categoria activo" data-filtro="todas-categorias">TODAS LAS CATEGORÍAS</button>
+            <button class="boton-categoria" data-filtro="restaurantes">RESTAURANTES</button>
+            <button class="boton-categoria" data-filtro="indumentaria">INDUMENTARIA</button>
+            <button class="boton-categoria" data-filtro="farmacia">FARMACIA</button>
+            <button class="boton-categoria" data-filtro="ferreteria">FERRETERÍA</button>
+            <button class="boton-categoria" data-filtro="peluqueria">PELUQUERÍA</button>
+            <button class="boton-categoria" data-filtro="salud">SALUD</button>
+            <button class="boton-categoria" data-filtro="turismo">TURISMO</button>
+            <button class="boton-categoria" data-filtro="spa">BELLEZA & SPA</button>
+        </div>
+    </section>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="comercios-disponibles">
+        <article class="tarjeta-comercio-catalogo" data-tipo="productos" data-categoria="restaurantes">
+            <a href="vidriera-c-producto.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="comida">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">PRODUCTOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Parrillada Oran</h3>
+                    <span class="calificacion">4.9</span>
+                </div>
+                <p class="eslogan">Comida casera como la de la abuela</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>999 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="productos" data-categoria="indumentaria">
+            <a href="vidriera-c-producto.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="ropa">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">PRODUCTOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Indumentaria Oran</h3>
+                    <span class="calificacion">4.8</span>
+                </div>
+                <p class="eslogan">Prendas unicas para vos</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>998 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="productos" data-categoria="farmacia">
+            <a href="vidriera-c-producto.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="pastillas">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">PRODUCTOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Farmacia Oran</h3>
+                    <span class="calificacion">4.7</span>
+                </div>
+                <p class="eslogan">La medicacion que necesitabas</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>997 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="productos" data-categoria="ferreteria">
+            <a href="vidriera-c-producto.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="herramientas">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">PRODUCTOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Ferreteria Oran</h3>
+                    <span class="calificacion">4.6</span>
+                </div>
+                <p class="eslogan">Herramientas para lo que quieras</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>996 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="servicios" data-categoria="turismo">
+            <a href="vidriera-c-servicio.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="paisaje">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">SERVICIOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Turismo Oran</h3>
+                    <span class="calificacion">4.5</span>
+                </div>
+                <p class="eslogan">La magia de la ciudad</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>995 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="servicios" data-categoria="spa">
+            <a href="vidriera-c-servicio.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="salon">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">SERVICIOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Salon Oran</h3>
+                    <span class="calificacion">4.4</span>
+                </div>
+                <p class="eslogan">Tu bienestar importa</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>994 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="servicios" data-categoria="clinica">
+            <a href="vidriera-c-servicio.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="clinica">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">SERVICIOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Clinica Oran</h3>
+                    <span class="calificacion">4.3</span>
+                </div>
+                <p class="eslogan">Salud de verdad</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>993 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+        <article class="tarjeta-comercio-catalogo" data-tipo="servicios" data-categoria="peluqueria">
+            <a href="vidriera-c-servicio.html" class="enlace-tarjeta-comercio">
+            <div class="tarjeta-imagen">
+                <img src="img/" alt="peluqueria">
+                <div class="etiquetas-flotantes">
+                    <span class="cartel-top">TOP</span>
+                    <span class="cartel-tipo">SERVICIOS</span>
+                </div>
+            </div>
+            <div class="tarjeta-info">
+                <div class="info-comercio">
+                    <h3>Peluqueria Oran</h3>
+                    <span class="calificacion">4.2</span>
+                </div>
+                <p class="eslogan">Renovamos tu look</p>
+                 <div class="info-detalles">
+                    <span>Centro de Orán</span>
+                    <span>Delivery</span>
+                    <span>992 reseñas</span>
+                </div>
+            </div>
+            </a>
+        </article>
+    </section>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

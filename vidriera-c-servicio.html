@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Portada-Comercio">
+        <img src="img/" alt="portada">
+        <div class="detalle-izquierdo">
+            <a href="catalogo.html" class="boton-volver">Volver</a>
+            <p class="etiqueta-categoria">SERVICIOS · ZONA CENTRO</p>
+            <h1 class="nombre-comercio">Salón Oran</h1>
+            <em class="eslogan">Tu bienestar importa</em>
+        </div>
+        <div class="detalle-derecho">
+            <a href="https://web.whatsapp.com" target="_blank" class="enlace-wpp">WhatsApp</a>
+            <p class="puntaje">⭐ 4.9</p>
+            <p class="delivery">Transporte disponible</p>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Catalogo">
+        <form action="confirmar-pago.html" class="formulario-turnos">
+            <fieldset class="orden">
+                <legend>1. Elegí el Servicio</legend>
+                <div class="opciones-servicio">
+                    <label class="opcion-radio">
+                        <input type="radio" name="seleccionado" value="corte-mujer" required>
+                        <div class="detalles-opcion">
+                            <strong>Corte de cabello para mujer</strong>
+                            <span>Duración: 50 min</span>
+                        </div>
+                        <strong class="precio-opcion">$15.000</strong>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seleccionado" value="tintura">
+                        <div class="detalles-opcion">
+                            <strong>Tintura Completa</strong>
+                            <span>Duración: 90 min</span>
+                        </div>
+                        <strong class="precio-opcion">$30.000</strong>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seleccionado" value="corte-hombre">
+                        <div class="detalles-opcion">
+                            <strong>Corte de cabello para hombre</strong>
+                            <span>Duración: 30 min</span>
+                        </div>
+                        <strong class="precio-opcion">$10.000</strong>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seleccionado" value="barba">
+                        <div class="detalles-opcion">
+                            <strong>Perfilado de barba</strong>
+                            <span>Duración: 20 min</span>
+                        </div>
+                        <strong class="precio-opcion">$8.000</strong>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seleccionado" value="cejas">
+                        <div class="detalles-opcion">
+                            <strong>Perfilado de cejas</strong>
+                            <span>Duración: 20 min</span>
+                        </div>
+                        <strong class="precio-opcion">$8.000</strong>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="orden">
+                <legend>2. Fecha y Hora</legend>
+                <div class="fecha">
+                    <label for="turno">Selecciona el día:</label>
+                    <input type="date" id="turno" name="fecha" required>
+                </div>
+                <div class="hora">
+                    <label class="boton-hora">
+                        <input type="radio" name="hora_turno" value="09:00" required>
+                        <span>09:00</span>
+                    </label>
+                    <label class="boton-hora">
+                        <input type="radio" name="hora_turno" value="10:00">
+                        <span>10:00</span>
+                    </label>
+                    <label class="boton-hora">
+                        <input type="radio" name="hora_turno" value="11:00">
+                        <span>11:00</span>
+                    </label>
+                    <label class="boton-hora">
+                        <input type="radio" name="hora_turno" value="16:00">
+                        <span>16:00</span>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="orden">
+                <legend>3. Cómo llegar</legend>
+                <div class="opcion-traslado">
+                    <label class="opcion-radio">
+                        <input type="radio" name="tipo_traslado" value="propio" checked>
+                        <div class="detalle-opcion">
+                            <strong>Voy por mi cuenta</strong>
+                            <span>Te esperamos en el local sin costo extra.</span>
+                        </div>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="tipo_traslado" value="vehiculo">
+                        <div class="detalle-opcion">
+                            <strong>Vehículo de traslado</strong>
+                            <span>Te buscamos y te llevamos de vuelta.</span>
+                        </div>
+                        <strong class="precio-opcion">+ $ 3.000</strong>
+                    </label>
+                </div>
+            </fieldset>
+            <div class="resumen-reserva">
+                <div class="resumen">
+                    <span>Servicio seleccionado</span>
+                    <span>Fecha: <strong id="resumen-fecha">--/--/--</strong> | Hora: <strong id="resumen-hora">--:--</strong></span>
+                </div>
+                <div class="accion-confirmar">
+                    <span class="total-reserva">Total: <strong>$ 15.000</strong></span>
+                    <button type="submit" class="boton-pagar">Confirmar Cita</button>
+                </div>
+            </div>
+        </form>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Calificacion">
+        <form action="#" id="resenia">
+            <div class="estrellas">
+               <label>Calificá este comercio</label>
+               <div class="estrellas-radio">
+                   <input type="radio" id="estrella5" name="puntuacion" value="5">
+                   <label for="estrella5">★</label>
+                   <input type="radio" id="estrella4" name="puntuacion" value="4">
+                   <label for="estrella4">★</label>
+                   <input type="radio" id="estrella3" name="puntuacion" value="3">
+                   <label for="estrella3">★</label>
+                   <input type="radio" id="estrella2" name="puntuacion" value="2">
+                   <label for="estrella2">★</label>
+                   <input type="radio" id="estrella1" name="puntuacion" value="1">
+                   <label for="estrella1">★</label>
+               </div>
+            </div>
+            <textarea id="comentario" placeholder="Escribí tu reseña aquí..." rows="4"></textarea>
+            <div class="boton-enviar">
+                <button type="submit" class="enviar">Enviar reseña</button>
+            </div>
+        </form>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

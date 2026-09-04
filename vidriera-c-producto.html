@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Portada-Comercio">
+        <img src="img/" alt="portada">
+        <div class="detalle-izquierdo">
+            <a href="catalogo.html" class="boton-volver">Volver</a>
+            <p class="etiqueta-categoria">PRODUCTOS · ZONA CENTRO</p>
+            <h1 class="nombre-comercio">Confiteria Oran</h1>
+            <em class="eslogan">Comida casera como la de la abuela</em>
+        </div>
+        <div class="detalle-derecho">
+            <a href="https://web.whatsapp.com" target="_blank" class="enlace-wpp">WhatsApp</a>
+            <p class="puntaje">⭐ 4.9</p>
+            <p class="delivery">Delivery disponible</p>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Catalogo">
+        <div class="productos">
+            <article class="tarjeta-info">
+                <div class="info-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-detalles">
+                    <strong class="nombre">Milanesa Napolitana con papas al plato</strong>
+                    <span>Milanesa de Lomo con jamon y queso acompañado con papas fritas</span>
+                    <div class="fila-precio">
+                        <span class="precio-destacado">$15.000</span>
+                        <div class="masmenos">
+                            <button class="restar">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="sumar">+</button>
+                        </div>
+                    </div>
+                    <button class="comprar">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="tarjeta-info">
+                <div class="info-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-detalles">
+                    <strong class="nombre">Super Pancho con Poncho</strong>
+                    <span>Salchicha paty en pan de papas con jamon y queso</span>
+                    <div class="fila-precio">
+                        <span class="precio-destacado">$8.000</span>
+                        <div class="masmenos">
+                            <button class="restar">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="sumar">+</button>
+                        </div>
+                    </div>
+                    <button class="comprar">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="tarjeta-info">
+                <div class="info-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-detalles">
+                    <strong class="nombre">Hamburguesa Clasica</strong>
+                    <span>Medallon de carne en pan de papas, con huevo, jamon y queso, lechuga y tomate</span>
+                    <div class="fila-precio">
+                        <span class="precio-destacado">$11.000</span>
+                        <div class="masmenos">
+                            <button class="restar">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="sumar">+</button>
+                        </div>
+                    </div>
+                    <button class="comprar">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="tarjeta-info">
+                <div class="info-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-detalles">
+                    <strong class="nombre">Empanadas Arabes</strong>
+                    <span>Carne molida con cebolla, tomate, manteca y jugo de limon en discos de empanadas de ojaldre</span>
+                    <div class="fila-precio">
+                        <span class="precio-destacado">$15.000</span>
+                        <div class="masmenos">
+                            <button class="restar">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="sumar">+</button>
+                        </div>
+                    </div>
+                    <button class="comprar">Agregar al carrito</button>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Calificacion">
+        <form action="#" id="resenia">
+            <div class="estrellas">
+               <label for="puntaje">Calificá este comercio</label>
+               <div class="estrellas-radio">
+                   <input type="radio" id="estrella5" name="puntuacion" value="5">
+                   <label for="estrella5">★</label>
+                   <input type="radio" id="estrella4" name="puntuacion" value="4">
+                   <label for="estrella4">★</label>
+                   <input type="radio" id="estrella3" name="puntuacion" value="3">
+                   <label for="estrella3">★</label>
+                   <input type="radio" id="estrella2" name="puntuacion" value="2">
+                   <label for="estrella2">★</label>
+                   <input type="radio" id="estrella1" name="puntuacion" value="1">
+                   <label for="estrella1">★</label>
+               </div>
+            </div>
+            <textarea id="comentario" placeholder="Escribí tu reseña aquí..." rows="4"></textarea>
+            <div class="boton-enviar">
+                <button type="submit" class="enviar">Enviar reseña</button>
+            </div>
+        </form>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

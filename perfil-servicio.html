@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="panel-control">
+        <div class="inicio">
+            <em>Perfil de tu comercio</em>
+            <h1>Hola, <strong>(Nombre del comercio)</strong></h1>
+            <div class="detalles">
+                <span class="editable">Eslogan</span>
+                <span class="editable">Direccion</span>
+                <span class="editable">Transporte</span>
+                <span class="editable">Fecha y hora</span>
+            </div>
+        </div>
+        <div class="estadisticas">
+            <article class="grafico">
+                <h3>$1.000.000,00</h3>
+                <p>Ingresos del mes</p>
+            </article>
+            <article class="grafico">
+                <h3>124</h3>
+                <p>Citas del mes</p>
+            </article>
+            <article class="grafico">
+                <h3>56</h3>
+                <p>Reseñas</p>
+            </article>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="lista-trabajos">
+        <div class="titulo-citas">
+            <h2>Citas del dia</h2>
+        </div>
+        <div class="tablero-citas">
+            <div class="trabajos">
+                <em class="titulo">Pendientes</em>
+                <article class="tarjeta-cita">
+                    <div class="datos-cita">
+                        <strong>#307</strong>
+                        <h4>Fulano</h4>
+                    </div>
+                    <span class="tipo-servicio"> 1x Corte de cabello para hombre</span>
+                    <strong class="precio">$10.000,00</strong>
+                    <button class="accionar">Iniciar atencion</button>
+                </article>
+                <article class="tarjeta-cita">
+                    <div class="datos-cita">
+                        <strong>#308</strong>
+                        <h4>Mengano</h4>
+                    </div>
+                    <span class="tipo-servicio"> 1x Perfilado de barba</span>
+                    <strong class="precio">$8.000,00</strong>
+                    <button class="accionar">Iniciar atencion</button>
+                </article>
+            </div>
+            <div class="trabajos">
+                <em class="titulo">En Proceso</em>
+                <article class="tarjeta-cita">
+                    <div class="datos-cita">
+                        <strong>#306</strong>
+                        <h4>Fulana</h4>
+                    </div>
+                    <span class="tipo-servicio"> 1x Corte de cabello para mujer</span>
+                    <strong class="precio">$15.000,00</strong>
+                    <button class="accionar">Finalizar</button>
+                </article>
+            </div>
+            <div class="trabajos">
+                <em class="titulo">Finalizados</em>
+                <article class="tarjeta-cita">
+                    <div class="datos-cita">
+                        <strong>#305</strong>
+                        <h4>Mengana</h4>
+                    </div>
+                    <span class="tipo-servicio"> 1x Tintura</span>
+                    <strong class="precio">$30.000,00</strong>
+                </article>
+            </div>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="catalogo">
+        <div class="gestion">
+            <div>
+                <em>Catalogo</em>
+                <h2>Mis servicios</h2>
+            </div>
+            <div class="acciones">
+                <a href="vidriera-c-servicio.html" class="ver-vidriera">Ver vidriera</a>
+                <button class="agregar">+ Nuevo servicio</button>
+            </div>
+        </div>
+        <div class="tipos-servicios">
+            <article class="fila-servicio">
+                <span class="servicio">Corte clasico para hombre</span>
+                <span class="descripcion">Lavado y corte a tijera</span>
+                <strong class="costo">$10.000</strong>
+                <div class="estado">
+                    <input type="checkbox" id="serv1">
+                    <label for="serv1">Disponible</label>
+                </div>
+            </article>
+            <article class="fila-servicio">
+                <span class="servicio">Corte de cabello para mujer</span>
+                <span class="descripcion">Lavado y corte a tijera</span>
+                <strong class="costo">$15.000</strong>
+                <div class="estado">
+                    <input type="checkbox" id="serv2">
+                    <label for="serv2">Disponible</label>
+                </div>
+            </article>
+            <article class="fila-servicio">
+                <span class="servicio">Perfilado de barba</span>
+                <span class="descripcion">Lavado y corte con navaja</span>
+                <strong class="costo">$8.000</strong>
+                <div class="estado">
+                    <input type="checkbox" id="serv3">
+                    <label for="serv3">Disponible</label>
+                </div>
+            </article>
+            <article class="fila-servicio">
+                <span class="servicio">Tintura Completa</span>
+                <span class="descripcion">Incluye producto y mano de obra</span>
+                <strong class="costo">$30.000</strong>
+                <div class="estado">
+                    <input type="checkbox" id="serv4">
+                    <label for="serv4">Disponible</label>
+                </div>
+            </article>
+            <article class="fila-servicio">
+                <span class="servicio">Perfilado de Cejas</span>
+                <span class="descripcion">Lavado y corte con navaja</span>
+                <strong class="costo">$8.000</strong>
+                <div class="estado">
+                    <input type="checkbox" id="serv5">
+                    <label for="serv5">Disponible</label>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Inicio-Registro">
+        <div class="Info">
+            <div id="Info-Registro">
+                <em>Sumate</em>
+                <h1>Crea tu cuenta</h1>
+                <h2>gratis</h2>
+                <p>Ingresa como cliente para conocer lo que tenemos en nuestro carrito o como comercio para dar a conocer lo que haces</p>
+            </div>
+            <div id="Info-Ingreso">
+                <em>Bienvenidos</em>
+                <h1>Ingresa a tu cuenta</h1>
+                <p>Volve a visualizar tus pedidos, citas y comercios favoritos</p>
+            </div>
+        </div>
+        <div class="Tarjetas-info">
+            <article class="Beneficios">
+                <img src="img/" alt="billetes">
+                <span>
+                    <h6>Suma Ingresos</h6>
+                    <p>Tu negocio al alcance de todos</p>
+                </span>
+            </article>
+            <article class="Beneficios">
+                <img src="img/" alt="stand">
+                <span>
+                    <h6>Publicidad incluida</h6>
+                    <p>Hacemos visible tu negocio</p>
+                </span>
+            </article>
+        </div>
+        <div class="Registro">
+            <div class="Registro-Ingreso">
+                <button class="Boton-Registro activo">Registrarme</button>
+                <button class="Boton-Ingreso">Ya tengo cuenta</button>
+            </div>
+            <form action="#" id="Formulario">
+                <h4>Soy ...</h4>
+                <div class="Tipo-Rol">
+                    <label class="Tipo" for="Cliente">
+                    <input type="radio" id="Cliente" name="Tipo-Usuario" value="Cliente" checked>
+                    <span>Cliente</span>
+                    <p>Comprar productos, agendar servicios</p>
+                    </label>
+                    <label class="Tipo" for="Producto">
+                    <input type="radio" id="Producto" name="Tipo-Usuario" value="Producto">
+                    <span>Comercio de productos</span>
+                    <p>Vender tus productos de forma online</p>
+                    </label>
+                    <label class="Tipo" for="Servicio">
+                    <input type="radio" id="Servicio" name="Tipo-Usuario" value="Servicio">
+                    <span>Comercio de servicios</span>
+                    <p>Agenda tus citas de manera online</p>
+                    </label>
+                </div>
+                <label for="Nombre">Colocar tu nombre</label>
+                <input type="text" id="Nombre" placeholder="Tu nombre">
+                <label for="Correo">Email</label>
+                <input type="email" id="Correo" placeholder="ejemplo@email.com">
+                <label for="Contrasen">Contraseña</label>
+                <input type="password" class="Contrasen" placeholder="**********">
+                <button type="submit" class="Boton-Confirmar">Crear mi cuenta</button>
+                <h6>Al continuar aceptás los términos y condiciones de Tu Carrito.</h6>
+            </form>
+            <form action="#">
+                <div class="Ingreso">
+                    <div class="oculto">
+                        <label for="ingreso-correo">Email</label>
+                        <input type="email" id="ingreso-correo" placeholder="ejemplo@email.com">
+                    </div>
+                    <div class="oculto">
+                        <label for="ingreso-password">Contraseña</label>
+                        <input type="password" id="ingreso-password" placeholder="**********">
+                    </div>
+                </div>
+                <button type="submit" class="Boton-Confirmar">Ingresar</button>
+            </form>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

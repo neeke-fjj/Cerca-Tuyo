@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="panel-control">
+        <div class="inicio">
+            <em>Perfil de tu comercio</em>
+            <h1>Hola, <strong>(Nombre del comercio)</strong></h1>
+            <div class="detalles">
+                <span class="editable">Eslogan</span>
+                <span class="editable">Direccion</span>
+                <span class="editable">Delivery</span>
+                <span class="editable">Fecha y hora</span>
+            </div>
+        </div>
+        <div class="estadisticas">
+            <article class="grafico">
+                <h3>$1.000.000,00</h3>
+                <p>Ingresos del mes</p>
+            </article>
+            <article class="grafico">
+                <h3>1234</h3>
+                <p>Ventas del mes</p>
+            </article>
+            <article class="grafico">
+                <h3>567</h3>
+                <p>Reseñas</p>
+            </article>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="lista-trabajos">
+        <div class="titulo-pedidos">
+            <h2>Pedidos del dia</h2>
+        </div>
+        <div class="tablero-pedidos">
+            <div class="trabajos">
+                <em class="titulo">Pendientes</em>
+                <article class="tarjeta-pedidos">
+                    <div class="datos-pedidos">
+                        <strong>#307</strong>
+                        <h4>Fulano</h4>
+                    </div>
+                    <span class="tipo-pedidos"> 1x Milanesa Napolitana con papas al plato</span>
+                    <strong class="precio">$15.000,00</strong>
+                    <button class="accionar">Iniciar preparacion</button>
+                </article>
+                <article class="tarjeta-pedidos">
+                    <div class="datos-pedidos">
+                        <strong>#308</strong>
+                        <h4>Mengano</h4>
+                    </div>
+                    <span class="tipo-pedidos"> 1x Super Pancho con Poncho</span>
+                    <strong class="precio">$6.000,00</strong>
+                    <button class="accionar">Iniciar preparacion</button>
+                </article>
+            </div>
+            <div class="trabajos">
+                <em class="titulo">En Camino</em>
+                <article class="tarjeta-pedidos">
+                    <div class="datos-pedidos">
+                        <strong>#306</strong>
+                        <h4>Fulana</h4>
+                    </div>
+                    <span class="tipo-pedidos"> 1x Hamburguesa Clasica</span>
+                    <strong class="precio">$11.000,00</strong>
+                    <button class="accionar">Finalizar</button>
+                </article>
+            </div>
+            <div class="trabajos">
+                <em class="titulo">Entregados</em>
+                <article class="tarjeta-pedidos">
+                    <div class="datos-pedidos">
+                        <strong>#305</strong>
+                        <h4>Mengana</h4>
+                    </div>
+                    <span class="tipo-pedidos"> 2x Docena de empanadas arabes </span>
+                    <strong class="precio">$30.000,00</strong>
+                </article>
+            </div>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="catalogo">
+        <div class="gestion">
+            <div>
+                <em>Catalogo</em>
+                <h2>Mis productos</h2>
+            </div>
+            <div class="acciones">
+                <a href="vidriera-c-producto.html" class="ver-vidriera">Ver vidriera</a>
+                <button class="agregar">+ Nuevo producto</button>
+            </div>
+        </div>
+        <div class="tipos-productos">
+            <article class="fila-productos">
+                <div class="imagen-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-producto">
+                    <span class="producto">Milanesa Napolitana con papas al plato</span>
+                    <span class="descripcion">Milanesa de Lomo con jamon y queso acompañado con papas fritas</span>
+                    <div class="precio-estado">
+                        <strong class="costo">$15.000</strong>
+                        <div class="estado">
+                            <input type="checkbox" id="prod1" checked>
+                            <label for="prod1">Disponible</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="fila-productos">
+                <div class="imagen-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-producto">
+                    <span class="producto">Super Pancho con Poncho</span>
+                    <span class="descripcion">Salchicha casera en pan de papas con jamon y queso</span>
+                    <div class="precio-estado">
+                        <strong class="costo">$7.000</strong>
+                        <div class="estado">
+                            <input type="checkbox" id="prod2" checked>
+                            <label for="prod2">Disponible</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="fila-productos">
+                <div class="imagen-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-producto">
+                    <span class="producto">Hamburguesa Clasica</span>
+                    <span class="descripcion">Medallon de carne en pan de papas, con huevo, jamon y queso, lechuga y tomate</span>
+                    <div class="precio-estado">
+                        <strong class="costo">$11.000</strong>
+                        <div class="estado">
+                            <input type="checkbox" id="prod3" checked>
+                            <label for="prod3">Disponible</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="fila-productos">
+                <div class="imagen-producto">
+                    <img src="img/" alt="comida">
+                </div>
+                <div class="info-producto">
+                    <span class="producto">Empanadas Arabes</span>
+                    <span class="descripcion">Carne molida con cebolla, tomate, manteca y jugo de limon en discos de empanadas de ojaldre</span>
+                    <div class="precio-estado">
+                        <strong class="costo">$15.000</strong>
+                        <div class="estado">
+                            <input type="checkbox" id="prod4">
+                            <label for="prod4">Disponible</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>

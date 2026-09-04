@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Tuyo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <a href="index.html" class="boton-inicio">Inicio</a>
+            <div class="menu">
+                <a href="catalogo.html" class="boton-buscar">Buscar</a>
+                <a href="carrito.html" class="boton-pedidos">Carrito</a>
+                <a href="login.html" class="boton-ingreso">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section id="Confirmacion">
+        <div class="encabezado">
+            <h1>Casi listo, <strong>(Nombre)</strong></h1>
+            <p>Completá tus datos para finalizar tu pedido en (Nombre del comercio)</p>
+        </div>
+        <form action="pagado.html" class="contenedor-columnas">
+            <div class="columna-formulario">
+                <fieldset class="grupo-datos">
+                    <legend>1. Datos de contacto</legend>
+                    <label for="telefono">Teléfono (WhatsApp)</label>
+                    <input type="tel" id="telefono" placeholder="Ej: 3878 123456" required>
+                </fieldset>
+                <fieldset class="grupo-datos">
+                    <legend>2. Opciones de entrega</legend>
+                    <div class="opciones-radio">
+                        <input type="radio" id="delivery" name="entrega" value="delivery" checked>
+                        <label for="delivery">Envío a domicilio</label>
+                        <input type="radio" id="retiro" name="entrega" value="retiro">
+                        <label for="retiro">Retiro en el local</label>
+                    </div>
+                    <div class="datos-direccion">
+                        <label for="direccion">Dirección exacta</label>
+                        <input type="text" id="direccion" placeholder="Ej: Pizarro 123" required>
+                        <label for="referencia">Referencia (Opcional)</label>
+                        <input type="text" id="referencia" placeholder="Ej: Casa con rejas negras">
+                    </div>
+                </fieldset>
+                <fieldset class="grupo-datos">
+                    <legend>3. Método de pago</legend>
+                    <div class="opciones-radio">
+                        <input type="radio" id="efectivo" name="pago" value="efectivo" checked>
+                        <label for="efectivo">Efectivo al recibir</label>
+                        <input type="radio" id="transferencia" name="pago" value="transferencia">
+                        <label for="transferencia">Transferencia (Alias / CBU)</label>
+                    </div>
+                </fieldset>
+            </div>
+            <aside class="columna-resumen">
+                <em class="etiqueta-resumen">RESUMEN DE COMPRA</em>
+                <div class="fila-resumen">
+                    <span>Subtotal</span>
+                    <span>$9.400</span>
+                </div>
+                <div class="fila-resumen">
+                    <span>Envío</span>
+                    <span>$3.000</span>
+                </div>
+                <hr>
+                <div class="fila-total">
+                    <strong>Total a pagar</strong>
+                    <strong class="precio-destacado">$10.400</strong>
+                </div>
+                <button type="submit" class="boton-pagar">Finalizar Compra</button>
+                <a href="carrito.html" class="enlace-secundario">← Volver al carrito</a>
+            </aside>
+        </form>
+    </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer id="Pie">
+        <div class="pie-texto">
+        <h4>Cerca Tuyo</h4>
+        <p>Un lugar donde tu comercio brilla y tus clientes te encuentran.</p>
+        </div>
+        <div class="pie-redes">
+            <h5>Donde encontrarnos</h5>
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-inst">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-fb">Facebook</a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wpp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cerca Tuyo · Hecho para encontrarnos · Todos los derechos reservados a SolTech · </p>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>
